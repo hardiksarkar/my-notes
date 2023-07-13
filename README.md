@@ -24,6 +24,8 @@ MyNotes is a web application that allows users to save, manage, and access their
 - Open the project folder.
 - Run the 'index.html' file in a web browser.
 - Use the application to create, edit, delete, and search for notes.
+                    <b>or</b>
+- Directly visit : https://hardiksarkar.github.io/my-notes/
 
 ## Thank You
 
