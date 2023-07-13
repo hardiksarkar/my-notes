@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .fa-circle-up {
+        color: black;
+        font-size: 30px;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        opacity: 0.8;
+      }
+      .fa-circle-down {
+        color: black;
+        font-size: 30px;
+        position: fixed;
+        top: 100px;
+        right: 30px;
+      }
+
+      .fa-solid:hover {
+        color: rgb(57, 54, 54);
+      }
+      #main {
+        position: relative;
+        min-height: 100vh;
+      }
+      #empty,
+      #no-match {
+        height: 70vh;
+        font-size: 7.5vw;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0.6;
+        cursor: default;
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="first"></div>
+      <!-- <a href="#last"><i class="fa-solid fa-circle-down" title="Go bottom"></i></a> -->
+      <!-- Navbar  -->
+
+      <nav class="navbar navbar-expand-lg sticky-top bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#home">MyNotes</a>
+          <button class="btn btn-outline-dark" onclick="addNote(this)">
+            Add New Note
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <button class="btn btn-outline-dark" onclick="addNote(this)">
+                Add New Note
+              </button> -->
+            </ul>
+            <form class="d-flex" role="search" >
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search"
+                onkeypress="handleEnter(event)"
+              />
+              <button
+                class="btn btn-outline-success"
+                onclick="searchNotes(this)"
+                type="button"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- To do Lists  -->
+
+      <div
+        id="main-container"
+        class="container mt-3 d-flex flex-wrap justify-content-center"
+      >
+        <!-- <div class="card m-3" style="width: 18rem">
+            <div class="card-body  text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+            </div>
+            <div class="d-flex justify-content-around pb-3">
+                <button type="button" class="btn btn-outline-primary">Edit</button>
+                <button type="button" class="btn btn-outline-danger" onclick="onDelete(this)">Delete</button>
+            </div>
+          </div> -->
+      </div>
+
+      <a href="#first"><i class="fa-solid fa-circle-up" title="Go Top"></i></a>
+
+      <div id="last" style="margin-top: 45px">&nbsp;</div>
+
+      <footer id="footer" class="p-2 bg-dark text-light text-center">
+        <div>
+          &copy; 2023 All rights reserved. <br />
+          Designed and developed by Hardik Sarkar
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts  -->
+
+    <script src="my-notes.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
