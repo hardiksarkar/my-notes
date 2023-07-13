@@ -112,7 +112,7 @@ const searchNotes = async (elm) => {
       if (Object.hasOwnProperty.call(localStorage, key)) {
         if (
           key.toLocaleLowerCase().match(searchVal) ||
-          localStorage[key].match(searchVal)
+          localStorage[key].toLocaleLowerCase().match(searchVal)
         ) {
           searchValArray.push(key);
         }
