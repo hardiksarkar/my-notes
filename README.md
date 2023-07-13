@@ -27,6 +27,10 @@ MyNotes is a web application that allows users to save, manage, and access their
                     <b>or</b>  <br>
 - Directly visit : https://hardiksarkar.github.io/my-notes/
 
+## Clearing Browser Cache
+
+If you have previously accessed an older version of the website and are not seeing the latest updates, it may be necessary to clear your browser cache. Clearing the cache ensures that your browser fetches the most recent version of the website.
+
 ## Thank You
 
 Thank you for checking out MyNotes! If you have any questions or feedback, please feel free to reach out. Enjoy organizing and managing your notes with MyNotes!
